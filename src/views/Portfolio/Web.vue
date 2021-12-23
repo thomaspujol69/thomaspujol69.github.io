@@ -161,6 +161,19 @@ export default {
         },
         {
           dialog: false,
+          title: 'Les Supers Mômes',
+          buttons: [
+            {
+              link: 'http://les-supers-momes.epizy.com/',
+              icon: 'fas fa-desktop',
+              name: 'Demo'
+            }
+          ],
+          tech: ['PHP', 'JavaScript', 'HTML', 'CSS'],
+          poster: '/resources/images/web/bdp.png'
+        },
+        {
+          dialog: false,
           title: 'API Bacle Visits',
           buttons: [
             {

@@ -102,7 +102,7 @@ export default {
         },
         {
           dialog: false,
-          title: 'Doscord bot - synchronisation de rôles',
+          title: 'Discord bot - synchronisation de rôles',
           buttons: [
             {
               link: 'https://bdeinfo.org/',
