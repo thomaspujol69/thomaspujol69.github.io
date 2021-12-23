@@ -85,38 +85,31 @@ export default {
         {
           dialog: false,
           title: 'Cahier de présence',
-          tech: ['Python', 'JSON', 'OpenOffice'],
+          tech: ['Python', 'JSON', 'Excel'],
           poster: '/resources/images/software/cdp.png'
         },
         {
           dialog: false,
           title: 'Snake en C & Assembleur',
-          tech: ['Python', 'JSON', 'OpenOffice'],
+          tech: ['C', 'GCC', 'VGA'],
           poster: '/resources/images/software/snake.png'
         },
         {
           dialog: false,
           title: 'Vérification de disponibilité des chronodoses',
           tech: ['Python', 'Kivy', 'Doctolib API'],
-          poster: '/resources/images/software/.png'
+          poster: '/resources/images/software/chronod.png'
         },
         {
           dialog: false,
           title: 'Discord bot - synchronisation de rôles',
-          buttons: [
-            {
-              link: 'https://bdeinfo.org/',
-              icon: 'fas fa-desktop',
-              name: 'Demo'
-            }
-          ],
-          tech: ['Python', 'JSON', 'OpenOffice'],
-          poster: '/resources/images/software/.png'
+          tech: ['Python', 'DiscordPy'],
+          poster: '/resources/images/software/discord.png'
         },
         {
           dialog: false,
           title: 'Autres',
-          tech: ['Python'],
+          tech: ['Python', 'Arduino', 'C++'],
           poster: '/resources/images/software/others.png'
         }
       ]
