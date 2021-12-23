@@ -91,7 +91,7 @@ export default {
         },
         {
           dialog: false,
-          title: 'URL Shortener SHDM',
+          title: 'SHDM URL Shortener',
           buttons: [
             {
               link: 'https://shdm.cf/',
@@ -104,7 +104,7 @@ export default {
         },
         {
           dialog: false,
-          title: 'Site Wado Club de Lyon',
+          title: 'Vitrine Wado Club de Lyon',
           buttons: [
             {
               link: 'https://www.karatewadoclubdelyon.fr/',
