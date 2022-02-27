@@ -48,9 +48,7 @@
             </h3>
             <div>
               <p class="justify">
-                <!--Je m'appelle Thomas PUJOL.-->
                 Je suis étudiant, passionné d'informatique.
-                <!-- Expériences -->
                 Dynamique et doué d'un bon relationnel, je dispense des tutorats à l'Université Lyon 1.
                 Lorsque je ne suis pas à l'université, je pratique mon sport, le karaté, fais de la musique ou réalise un nouveau projet !
               </p>

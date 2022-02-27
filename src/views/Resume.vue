@@ -1,114 +1,15 @@
 <template>
-  <v-layout row justify-center align-center wrap class="mt-4 pt-2">
-    <v-flex xs12 sm12 md5 lg6 xl6 class="mt-4 pt-4">
-      <h2 class="mb-4 pl-4 pt-2">Formation</h2>
-      <v-card-text class="py-0">
-        <v-timeline align-top dense>
-
-          <v-timeline-item color="blue" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">SEP 2020 -</div>
-                <div class="caption font-weight-bold blue--text">JUIL 2022</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>DUT Informatique</strong>
-                <div class="caption mb-2">Université Claude Bernard Lyon 1</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-
-          <v-timeline-item color="blue" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">SEP 2020 -</div>
-                <div class="caption font-weight-bold blue--text">PRESENT</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Cours en ligne</strong>
-                <div class="caption mb-2">France Université Numérique</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-
-          <v-timeline-item color="blue" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">SEP 2017 -</div>
-                <div class="caption font-weight-bold blue--text">JUIL 2020</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Baccalauréat scientifique spé. informatique</strong>
-                <div class="caption mb-2">Lycée Institution des Chartreux Lyon I<sup>er</sup></div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-        </v-timeline>
-      </v-card-text>
+  <v-layout row justify-center wrap class="mt-4 pt-2">
+    <v-flex xs12 sm12 lg6 xl6 class="mt-4 pt-2">
+      <formation-timeline :data="formation" title="Formation"></formation-timeline>
     </v-flex>
-    <v-flex xs12 sm12 md4 lg6 xl6 class="mt-4 pt-2">
-      <h2 class="mb-4 pl-4">Expériences</h2>
-      <v-card-text class="py-0">
-        <v-timeline align-top dense>
-          <v-timeline-item color="blue" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">OCT 2021 -</div>
-                <div class="caption font-weight-bold blue--text">JUIL 2022</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Etudiant tuteur</strong>
-                <div class="caption mb-2">Université Lyon 1</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-
-          <v-timeline-item color="blue" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">JUIN 2021 -</div>
-                <div class="caption font-weight-bold blue--text">JUIL 2021</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Stage volontaire - Cybersécurité</strong>
-                <div class="caption mb-2">NSOC</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-
-          <v-timeline-item color="blue" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">MAI 2021 -</div>
-                <div class="caption font-weight-bold blue--text">AUJOURD'HUI</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Service Technique</strong>
-                <div class="caption mb-2">BDE Info</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-
-          <v-timeline-item color="blue" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold blue--text">AOUT 2020 -</div>
-                <div class="caption font-weight-bold blue--text">AUJOURD'HUI</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Concepteur et mainteneur d'applications web</strong>
-                <div class="caption mb-2">Wado Club de Lyon</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-        </v-timeline>
-      </v-card-text>
+    <v-flex xs12 sm12 lg6 xl6 class="mt-4 pt-2">
+      <formation-timeline :data="experiences" title="Expériences"></formation-timeline>
     </v-flex>
-    <v-layout row justify-center align-center wrap class="mt-4 pt-2">
-      <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
+    <v-layout row justify-center align-center wrap class="mt-4 pt-2 timelineContainer flexCompetences">
+      <v-flex xl5 class="mx-2 pt-4">
         <h2>
-          <span>Compétences de </span>
-
+          <span>Compétences en </span>
           <span class="blue--text">développement</span>
         </h2>
         <br>
@@ -121,7 +22,7 @@
         <strong>C++</strong>
         <v-progress-linear v-model="bufferCpp" :buffer-value="bufferValue" color="blue" height="16"></v-progress-linear>
       </v-flex>
-      <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
+      <v-flex xl5 class="mx-2 pt-4">
         <h2>
           <span> </span>
           <span class="blue--text">&nbsp;</span>
@@ -153,7 +54,9 @@
 </template>
 
 <script>
+import FormationTimeline from '../components/FormationTimeline.vue'
 export default {
+  components: { FormationTimeline },
   metaInfo: {
     title: 'Curriculum Vitae',
     titleTemplate: '%s ← Thomas PUJOL',
@@ -193,7 +96,57 @@ export default {
       bufferHTML: 0,
       bufferJS: 0,
       bufferValue: 100,
-      interval: 0
+      interval: 0,
+      formation: [
+        {
+          date: 'JUIL 2022<br>SEP 2020',
+          title: 'DUT Informatique',
+          subtitle: 'Université Claude Bernard Lyon 1'
+        },
+        {
+          date: 'AUJOURD\'HUI<br>SEP 2020',
+          title: 'Formations en ligne',
+          subtitle: 'France Université Numérique & Udemy'
+        },
+        {
+          date: 'JUIL 2020<br>SEP 2017',
+          title: 'Baccalauréat Scientifique spé. informatique',
+          subtitle: 'Lycée Institution des Chartreux, Lyon I<sup>er</sup>'
+        }
+        // ,
+        // {
+        //   date: '',
+        //   title: '',
+        //   subtitle: ''
+        // }
+      ],
+      experiences: [
+        {
+          date: 'AUJOURD\'HUI<br>JAN 2022',
+          title: 'Auto-Entrepreneur',
+          subtitle: 'Lyon'
+        },
+        {
+          date: 'JUIL 2022<br>OCT 2021',
+          title: 'Etudiant tuteur',
+          subtitle: 'Université Claude Bernard Lyon 1'
+        },
+        {
+          date: 'JUIL 2021<br>JUIN 2021',
+          title: 'Stagiaire - Cybersécurité',
+          subtitle: 'NSOC, Lyon'
+        },
+        {
+          date: 'AUJOURD\'HUI<br>MAI 2021',
+          title: 'Service Technique',
+          subtitle: 'BDE Info Lyon 1'
+        },
+        {
+          date: 'AUJOURD\'HUI<br>AOÛT 2020',
+          title: 'Concepteur et mainteneur d\'applications web',
+          subtitle: 'Wado Club de Lyon'
+        }
+      ]
     }
   },
   mounted () {
@@ -221,5 +174,25 @@ export default {
   }
 }
 </script>
-<style >
+<style>
+.timelineContainer{
+  max-width:600px;
+  margin:auto;
+}
+.flexCompetences{
+  flex-direction: row;
+}
+.flexCompetences > div{
+  width:40%;
+  min-width: 270px;
+}
+.flexCompetences>div:last-child{
+  width:100%;
+  text-align: center;
+}
+@media only screen and (min-width: 1264px) {
+  .flexCompetences{
+    max-width:unset;
+  }
+}
 </style>
