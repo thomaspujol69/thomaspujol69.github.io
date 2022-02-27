@@ -99,9 +99,19 @@ export default {
       interval: 0,
       formation: [
         {
+          date: 'JUIL 2022<br>AVR 2022',
+          title: 'Stagiaire - Systèmes et Réseaux',
+          subtitle: 'Commune de Neuville-Sur-Saône'
+        },
+        {
           date: 'JUIL 2022<br>SEP 2020',
           title: 'DUT Informatique',
           subtitle: 'Université Claude Bernard Lyon 1'
+        },
+        {
+          date: 'JUIL 2021<br>JUIN 2021',
+          title: 'Stagiaire - Cybersécurité',
+          subtitle: 'NSOC, Lyon'
         },
         {
           date: 'AUJOURD\'HUI<br>SEP 2020',
@@ -124,17 +134,12 @@ export default {
         {
           date: 'AUJOURD\'HUI<br>JAN 2022',
           title: 'Auto-Entrepreneur',
-          subtitle: 'Lyon'
+          subtitle: 'Programmation, conseil et autres activités informatiques'
         },
         {
           date: 'JUIL 2022<br>OCT 2021',
           title: 'Etudiant tuteur',
           subtitle: 'Université Claude Bernard Lyon 1'
-        },
-        {
-          date: 'JUIL 2021<br>JUIN 2021',
-          title: 'Stagiaire - Cybersécurité',
-          subtitle: 'NSOC, Lyon'
         },
         {
           date: 'AUJOURD\'HUI<br>MAI 2021',

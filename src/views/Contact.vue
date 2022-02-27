@@ -167,5 +167,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
+i{
+  min-width: 55px;
+}
 </style>
