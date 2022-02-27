@@ -144,23 +144,23 @@ export default {
       const errors = []
       if (!this.$v.name.$dirty) return errors
       !this.$v.name.maxLength &&
-        errors.push('Name must be at most 20 characters long')
-      !this.$v.name.required && errors.push('Name is required.')
+        errors.push('Ce champ ne peut contenir plus de 20 caractères')
+      !this.$v.name.required && errors.push('Votre nom est requis.')
       return errors
     },
     emailErrors () {
       const errors = []
       if (!this.$v.email.$dirty) return errors
-      !this.$v.email.email && errors.push('Must be valid e-mail')
-      !this.$v.email.required && errors.push('E-mail is required')
+      !this.$v.email.email && errors.push('L\'e-mail doit être valide')
+      !this.$v.email.required && errors.push('L\'e-mail est requis.')
       return errors
     },
     bodyErrors () {
       const errors = []
       if (!this.$v.body.$dirty) return errors
       !this.$v.body.minLength &&
-        errors.push('Text must be at least 20 characters long')
-      !this.$v.body.required && errors.push('Text is required')
+        errors.push('Ce champ doit contenir plus de 20 caractères')
+      !this.$v.body.required && errors.push('Le message est requis.')
       return errors
     }
   }
