@@ -4,7 +4,7 @@
       <span class="blue--text">Portfolio</span>
       <span> SysAdmin</span>
     </h2>
-    <v-layout row justify-center align-center wrap class="mt-4 pt-2">
+    <v-layout justify-center align-center wrap class="mt-4 pt-2">
       <v-dialog
         v-model="project.dialog"
         lazy
