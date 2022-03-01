@@ -4,7 +4,7 @@
       <formation-double-timeline :data2="formation" title2="Formation" :data1="experiences" title1="Expériences"></formation-double-timeline>
     </v-flex>
     <v-flex xs12 sm12 lg6 xl6 class="mt-4 pt-2">
-      <formation-timeline :data="experiences" title="Certifications et MOOC"></formation-timeline>
+      <formation-timeline :data="certifications" title="Certifications et MOOC"></formation-timeline>
     </v-flex>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2 timelineContainer flexCompetences">
       <v-flex xl5 class="mx-2 pt-4">
@@ -98,6 +98,28 @@ export default {
       bufferJS: 0,
       bufferValue: 100,
       interval: 0,
+      certifications: [
+        {
+          date: 'FEV 2022',
+          title: 'Cisco - Cybersecurity Essentials',
+          subtitle: 'Connaissance fondamentale de la cybersécurité'
+        },
+        {
+          date: 'JAN 2022',
+          title: 'TOEIC - 805/990',
+          subtitle: 'Capacité professionnelle complète'
+        },
+        {
+          date: 'DEC 2020',
+          title: 'Sécurité des Réseaux Informatiques',
+          subtitle: 'Institut Mines Télécom - France Université Numérique'
+        },
+        {
+          date: 'AUJOURD\'HUI<br>SEP 2021',
+          title: 'Ethical Hacking and Penetration Testing',
+          subtitle: 'Udemy'
+        }
+      ],
       formation: [
         {
           date: 'JUIL 2022<br>AVR 2022',
@@ -113,11 +135,6 @@ export default {
           date: 'JUIL 2021<br>JUIN 2021',
           title: 'Stagiaire - Cybersécurité',
           subtitle: 'NSOC, Lyon'
-        },
-        {
-          date: 'AUJOURD\'HUI<br>SEP 2020',
-          title: 'Formations en ligne',
-          subtitle: 'France Université Numérique & Udemy'
         },
         {
           date: 'JUIL 2020<br>SEP 2017',

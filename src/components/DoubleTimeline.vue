@@ -6,6 +6,7 @@
       width=165
       height=40
       font-size=20
+
       color="#21cbf3"
       switch-color="#2196f3" />
     <div class="slider">
@@ -115,6 +116,9 @@ export default {
 }
 li.timeline-item{
     color:inherit !important;
+}
+.vue-js-switch .v-switch-label{
+  font-weight: 500!important;
 }
 @media only screen and (max-width: 449px) {
   .timelineContainer .content{
