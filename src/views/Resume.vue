@@ -1,10 +1,10 @@
 <template>
   <v-layout row justify-center wrap class="mt-4 pt-2">
     <v-flex xs12 sm12 lg6 xl6 class="mt-4 pt-2">
-      <formation-timeline :data="formation" title="Formation"></formation-timeline>
+      <formation-double-timeline :data2="formation" title2="Formation" :data1="experiences" title1="Expériences"></formation-double-timeline>
     </v-flex>
     <v-flex xs12 sm12 lg6 xl6 class="mt-4 pt-2">
-      <formation-timeline :data="experiences" title="Expériences"></formation-timeline>
+      <formation-timeline :data="experiences" title="Certifications et MOOC"></formation-timeline>
     </v-flex>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2 timelineContainer flexCompetences">
       <v-flex xl5 class="mx-2 pt-4">
@@ -54,9 +54,10 @@
 </template>
 
 <script>
+import FormationDoubleTimeline from '../components/DoubleTimeline.vue'
 import FormationTimeline from '../components/FormationTimeline.vue'
 export default {
-  components: { FormationTimeline },
+  components: { FormationTimeline, FormationDoubleTimeline },
   metaInfo: {
     title: 'Curriculum Vitae',
     titleTemplate: '%s ← Thomas PUJOL',
