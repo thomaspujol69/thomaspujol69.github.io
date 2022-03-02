@@ -4,7 +4,7 @@
       <p>
         404
         <br>
-        <small>PAGE NOT FOUND</small>
+        <small>PAGE INTROUVABLE</small>
       </p>
       <span class="circle big"></span>
       <span class="circle med"></span>
@@ -12,7 +12,7 @@
       <br>
       <br>
       <v-btn large to="/" class="blue--text">
-        <v-icon>arrow_back</v-icon>GO HOME
+        <v-icon>arrow_back</v-icon>ACCUEIL
       </v-btn>
     </div>
   </v-layout>
@@ -60,7 +60,7 @@ export default {}
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background: rgb(200, 223, 166);
+  background: #cd7fdd;
   position: absolute;
   z-index: 1;
   top: 80px;
@@ -75,7 +75,7 @@ export default {}
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: rgb(141, 214, 163);
+  background: #44aafd;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -90,7 +90,7 @@ export default {}
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: rgb(173, 211, 129);
+  background: #18eff7;
   position: absolute;
   z-index: 1;
   top: 200px;
