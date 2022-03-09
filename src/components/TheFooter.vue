@@ -17,19 +17,19 @@
                   <h1>Crédits & Mentions légales</h1>
                 </slot>
               </div>
-
               <div class="modal-body">
                 <slot name="body">
                   <h2>Mentions Légales</h2>
                   <h4>Propriétaire du site</h4>
                   <p>
-                    PUJOL Thomas - thomaspujol69@gmail.com <br> 
+                    PUJOL Thomas<br>
                     SIREN : 909 562 431 <br>
                   </p>
-                  <h4>Adresse : </h4>
+                  <h4>Contact</h4>
                   <p>
-                    61 rue Coste 69300 <br>
-                    Caluire-et-Cuire
+                    thomaspujol69@gmail.com<br>
+                    61 rue Coste <br>
+                    69300 Caluire-et-Cuire
                   </p>
                   <h4>Hébergeur</h4>
                   <p>
@@ -39,7 +39,9 @@
                     (415) 448-6673
                   </p>
                   <h2>Crédits</h2>
-                  <p></p>
+                  <p>
+
+                  </p>
                 </slot>
               </div>
 
@@ -152,8 +154,5 @@ export default {
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
-#credits-button{
-  
 }
 </style>
