@@ -6,9 +6,9 @@
       width=165
       height=40
       font-size=20
-
       color="#21cbf3"
-      switch-color="#2196f3" />
+      switch-color="#2196f3" >
+    </toggle-button>
     <div class="slider">
       <div :ref="title2" style="opacity:1;" class="timelineContainer">
         <timeline timeline-bg="#2196f3" timeline-theme="#b3d4fc">
@@ -119,6 +119,10 @@ li.timeline-item{
 }
 .vue-js-switch .v-switch-label{
   font-weight: 500!important;
+}
+.vue-js-switch:hover .v-switch-button{
+  animation: mymove 1s infinite;
+  background-color: #3499ec !important;
 }
 @media only screen and (max-width: 449px) {
   .timelineContainer .content{
