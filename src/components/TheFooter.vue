@@ -1,8 +1,8 @@
 <template>
   <v-footer class="pa-3">
-    <button id="credits-button" @click="showModal=!showModal">Credits</button>
-    <v-spacer></v-spacer>
-    <div>&copy; Thomas PUJOL {{ new Date().getFullYear() }}</div>
+    <span id="credits-button" @click="showModal=!showModal">Mentions légales</span>
+    <!--<v-spacer></v-spacer>
+    <div>&copy; Thomas PUJOL {{ new Date().getFullYear() }}</div-->
     <v-spacer></v-spacer>
     Créé avec&nbsp;
     <v-icon small color="red">fas fa-heart</v-icon>&nbsp;et&nbsp;
@@ -14,12 +14,12 @@
 
               <div class="modal-header">
                 <slot name="header">
-                  <h1>Crédits & Mentions légales</h1>
+                  <h1><!--Crédits & -->Mentions légales</h1>
                 </slot>
               </div>
               <div class="modal-body">
                 <slot name="body">
-                  <h2>Mentions Légales</h2>
+                  <!--h2>Mentions Légales</h2-->
                   <h4>Propriétaire du site</h4>
                   <p>
                     PUJOL Thomas<br>
@@ -38,10 +38,10 @@
                     San Francisco, CA 94107 USA <br>
                     (415) 448-6673
                   </p>
-                  <h2>Crédits</h2>
+                  <!--h2>Crédits</h2>
                   <p>
 
-                  </p>
+                  </p-->
                 </slot>
               </div>
 
@@ -65,7 +65,7 @@ export default {
   name: 'SizeModalTest',
   data: () => {
     return {
-      showModal: true
+      showModal: false
     }
   },
   methods: {
@@ -154,5 +154,9 @@ export default {
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+#credits-button{
+  cursor: pointer;
 }
 </style>

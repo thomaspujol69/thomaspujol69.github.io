@@ -162,7 +162,7 @@ export default {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .vue-typer .custom.char.typed {
-  color: blue;
+  color: #2196f3;
 }
 .vue-typer .custom.char.selected {
   color: #e91e63;
@@ -172,7 +172,7 @@ export default {
   animation: rocking 1s ease-in-out 0s infinite;
 }
 .vue-typer .custom.caret.typing {
-  background-color: blue;
+  background-color: #2196f3;
 }
 .vue-typer .custom.caret.selecting {
   display: inline-block;
