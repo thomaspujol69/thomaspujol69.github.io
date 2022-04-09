@@ -23,7 +23,7 @@
 
     <br>
 
-    <vue-typer class="headline" :repeat="0" text="Thomas PUJOL"></vue-typer>
+    <vue-typer class="headline" :repeat="0" text=" Thomas PUJOL "> </vue-typer>
     <vue-typer
       :text="text1"
       :repeat="Infinity"
@@ -97,8 +97,8 @@ import VueCompareImage from 'vue-compare-image'
 
 export default {
   metaInfo: {
-    title: 'Accueil',
-    titleTemplate: '%s ← Thomas PUJOL',
+    title: 'Thomas PUJOL',
+    titleTemplate: 'Thomas PUJOL',
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'description', content: 'Portfolio de Thomas PUJOL' },
@@ -134,7 +134,7 @@ export default {
         { href: 'https://www.instagram.com/thomaspujol69', icon: 'fab fa-instagram' },
         { href: 'https://musescore.com/thomaspujol69', icon: 'icon-musescore' }
       ],
-      text1: ['Développeur web', 'Développeur logiciel', 'Administrateur système', 'Administrateur réseau'],
+      text1: ['Administrateur système', 'Administrateur réseau', 'Développeur web', 'Développeur logiciel'],
       leftImage: '/resources/images/leftImage.png',
       rightImage: '/resources/images/rightImage.png',
       leftImage2: '/resources/images/IMG_0211.jpg',
