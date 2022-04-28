@@ -91,6 +91,19 @@ export default {
         },
         {
           dialog: false,
+          title: 'Eovolt',
+          buttons: [
+            {
+              link: 'https://eovolt.com/',
+              icon: 'fas fa-desktop',
+              name: 'Site web'
+            }
+          ],
+          tech: ['Administration système', 'DNS', 'Email', 'Custom Track Domain (CTD)', 'Lemlist'],
+          poster: '/resources/images/sysAdmin/eovolt.png'
+        },
+        {
+          dialog: false,
           title: 'Home',
           tech: ['Raspberry Pi', 'NAS', 'Synology', 'HP Workstation'],
           poster: '/resources/images/sysAdmin/home.jpg'
