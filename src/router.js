@@ -57,10 +57,10 @@ export default new Router({
         import(/* webpackChunkName: "about" */ './views/Portfolio/Software.vue')
   },
   {
-    path: '/portfolio/administration système',
-    name: 'sysAdminPortfolio',
+    path: '/portfolio/admin',
+    name: 'adminPortfolio',
     component: () =>
-        import(/* webpackChunkName: "about" */ './views/Portfolio/SysAdmin.vue')
+        import(/* webpackChunkName: "about" */ './views/Portfolio/Admin.vue')
   },
   {
     path: '/portfolio/web',

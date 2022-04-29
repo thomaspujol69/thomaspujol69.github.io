@@ -143,7 +143,7 @@ export default {
               name: 'Demo'
             }
           ],
-          tech: ['PHP', 'HTML', 'CSS'],
+          tech: ['PHP', 'HTML', 'CSS', 'PHPMail'],
           poster: '/resources/images/web/noelcanadien.png'
         },
         {
@@ -169,8 +169,8 @@ export default {
               name: 'Demo'
             }
           ],
-          tech: ['PHP', 'JavaScript', 'HTML', 'CSS'],
-          poster: '/resources/images/web/bdp.png'
+          tech: ['Wordpress', 'PHP', 'CSS', 'CPanel'],
+          poster: '/resources/images/web/les-super-momes.png'
         },
         {
           dialog: false,
@@ -199,7 +199,7 @@ export default {
         {
           dialog: false,
           title: 'Annales - Institution des Chartreux',
-          tech: ['PHP', 'HTML', 'CSS'],
+          tech: ['PHP', 'HTML', 'CSS', 'Bootstrap'],
           poster: '/resources/images/web/annales.png'
         }
       ]

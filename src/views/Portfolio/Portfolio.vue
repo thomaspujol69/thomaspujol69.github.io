@@ -3,7 +3,7 @@
     <v-layout justify-center align-center wrap class="mt-4 pt-2">
       <v-flex v-for="portfolio in portfolios" :key="portfolio.src" xs12 sm12 md4 lg4 xl4>
         <v-card
-          :to="'/portfolio/'+(portfolio.title).toLowerCase()"
+          :to="'/portfolio/'+(portfolio.url ? portfolio.url : (portfolio.title).toLowerCase())"
           hover
           flat
           color="transparent"
@@ -61,7 +61,8 @@ export default {
         },
         {
           src: '/resources/images/adminIcon.png',
-          title: 'Administration système'
+          title: 'Administration Système & Réseau',
+          url: 'admin'
         }
       ]
     }

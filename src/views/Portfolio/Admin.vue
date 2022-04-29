@@ -2,7 +2,7 @@
   <v-container grid-list-xl>
     <h2 class="pl-4">
       <span class="blue--text">Portfolio</span>
-      <span> SysAdmin</span>
+      <span> Admin</span>
     </h2>
     <v-layout justify-center align-center wrap class="mt-4 pt-2">
       <v-dialog
@@ -47,7 +47,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Portfolio SysAdmin',
+    title: 'Portfolio Admin',
     titleTemplate: '%s ← Thomas PUJOL',
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -87,7 +87,7 @@ export default {
             }
           ],
           tech: ['SSH', 'Docker', 'Portainer', 'Alpine', 'Nginx', 'Apache'],
-          poster: '/resources/images/sysAdmin/bde.png'
+          poster: '/resources/images/admin/bde.png'
         },
         {
           dialog: false,
@@ -99,14 +99,33 @@ export default {
               name: 'Site web'
             }
           ],
-          tech: ['Administration système', 'DNS', 'Email', 'Custom Track Domain (CTD)', 'Lemlist'],
-          poster: '/resources/images/sysAdmin/eovolt.png'
+          tech: ['Administration réseau', 'DNS', 'Email', 'Custom Track Domain (CTD)', 'Lemlist'],
+          poster: '/resources/images/admin/eovolt.png'
+        },
+        {
+          dialog: false,
+          title: 'AVM Conseils | Transport Scolaire',
+          tech: ['Administration système', 'Mise en production', 'PHP', 'MySQL', 'Postfix', 'RoundCube'],
+          poster: '/resources/images/admin/avm_conseils.png'
+        },
+        {
+          dialog: false,
+          title: 'Eatic',
+          buttons: [
+            {
+              link: 'https://eatic.fr/',
+              icon: 'fas fa-desktop',
+              name: 'Site web'
+            }
+          ],
+          tech: ['Administration système', 'Gitlab Runner', 'CI/CD', 'Nginx', 'NodeJS', 'MySQL', 'DevOps'],
+          poster: '/resources/images/admin/eatic.png'
         },
         {
           dialog: false,
           title: 'Home',
-          tech: ['Raspberry Pi', 'NAS', 'Synology', 'HP Workstation'],
-          poster: '/resources/images/sysAdmin/home.jpg'
+          tech: ['Raspberry Pi', 'NAS', 'Synology', 'HP Workstation', 'Debian', 'Ubuntu', 'Windows'],
+          poster: '/resources/images/admin/home.jpg'
         }
       ]
     }
