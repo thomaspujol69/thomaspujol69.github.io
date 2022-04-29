@@ -6,8 +6,8 @@
       width=165
       height=40
       font-size=20
-      color="#21cbf3"
-      switch-color="#2196f3" >
+      :color="{checked:'#37b0db', unchecked:'#afbccc'}"
+      :switch-color="{ checked: '#187df0', unchecked: '#2196f3' }" >
     </toggle-button>
     <div class="slider">
       <div :ref="title2" style="opacity:1;" class="timelineContainer">
