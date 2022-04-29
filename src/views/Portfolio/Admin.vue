@@ -78,19 +78,6 @@ export default {
       projects: [
         {
           dialog: false,
-          title: 'BDE Info',
-          buttons: [
-            {
-              link: 'https://bdeinfo.org/',
-              icon: 'fas fa-desktop',
-              name: 'Demo'
-            }
-          ],
-          tech: ['SSH', 'Docker', 'Portainer', 'Alpine', 'Nginx', 'Apache'],
-          poster: '/resources/images/admin/bde.png'
-        },
-        {
-          dialog: false,
           title: 'Eovolt',
           buttons: [
             {
@@ -120,6 +107,19 @@ export default {
           ],
           tech: ['Administration système', 'Gitlab Runner', 'CI/CD', 'Nginx', 'NodeJS', 'MySQL', 'DevOps'],
           poster: '/resources/images/admin/eatic.png'
+        },
+        {
+          dialog: false,
+          title: 'BDE Info',
+          buttons: [
+            {
+              link: 'https://bdeinfo.org/',
+              icon: 'fas fa-desktop',
+              name: 'Demo'
+            }
+          ],
+          tech: ['SSH', 'Docker', 'Portainer', 'Alpine', 'Nginx', 'Apache'],
+          poster: '/resources/images/admin/bde.png'
         },
         {
           dialog: false,
