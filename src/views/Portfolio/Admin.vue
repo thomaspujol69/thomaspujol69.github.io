@@ -91,6 +91,19 @@ export default {
         },
         {
           dialog: false,
+          title: 'Commune de Neuville-sur-Saône',
+          buttons: [
+            {
+              link: 'https://www.mairie.neuvillesursaone.fr/',
+              icon: 'fas fa-desktop',
+              name: 'Site web'
+            }
+          ],
+          tech: ['Administration réseau', 'Administration système', 'DNS', 'Active Directory', 'Stratégie de groupe', 'Linux', 'Rocket.Chat', 'VPN', 'Assistance utilisateur'],
+          poster: '/resources/images/admin/neuville.png'
+        },
+        {
+          dialog: false,
           title: 'AVM Conseils | Transport Scolaire',
           tech: ['Administration système', 'Mise en production', 'PHP', 'MySQL', 'Postfix', 'RoundCube'],
           poster: '/resources/images/admin/avm_conseils.png'
