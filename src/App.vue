@@ -14,7 +14,7 @@
         </transition>
       </v-container>
     </v-content>
-    <TheFooter/>
+    <TheFooter :go-dark="goDark"/>
   </v-app>
 </template>
 

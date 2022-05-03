@@ -10,7 +10,7 @@
     <transition name="modal">
         <div v-if="showModal" class="modal-mask">
           <div class="modal-wrapper">
-            <div class="modal-container">
+            <div :class="goDark?'dark-modal-container': 'modal-container'">
 
               <div class="modal-header">
                 <slot name="header">
@@ -62,6 +62,9 @@
 
 <script>
 export default {
+  props:{
+    goDark: Boolean
+  },
   name: 'SizeModalTest',
   data: () => {
     return {
@@ -89,7 +92,7 @@ export default {
 }
 .demo-modal-class {
   border-radius: 5px;
-  background: #f7f7f7;
+  background: "#f7f7f7";
   box-shadow: 5px 5px 30px 0px rgba(46, 61, 73, 0.6);
 }
 .modal-mask {
@@ -119,13 +122,17 @@ export default {
   transition: all 0.3s ease;
   font-family: Helvetica, Arial, sans-serif;
 }
+.dark-modal-container{
+  @extend .modal-container;
+  background-color: #090909;
+}
 
 .modal-header h3 {
   margin-top: 0;
   color: #42b983;
 }
 
-.modal-body {
+.modal-body, .dark-modal {
   margin: 20px 0;
 }
 
