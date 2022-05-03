@@ -10,7 +10,7 @@
           enter-active-class="animated fadeIn fast"
           leave-active-class="animated fadeOut faster"
         >
-          <router-view></router-view>
+          <router-view :go-dark="goDark"></router-view>
         </transition>
       </v-container>
     </v-content>

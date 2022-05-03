@@ -9,6 +9,18 @@
       :leftImage="leftImage"
       :rightImage="rightImage"
       :sliderPositionPercentage="sliderPosition"
+      v-if="!goDark"
+    />
+    <VueCompareImage
+      class="hidden-md-and-down"
+      hover
+      :style="{ minWidth: '1300px' }"
+      :sliderLineWidth="sliderLine"
+      :handleSize="hSize"
+      :leftImage="blackLeftImage"
+      :rightImage="blackRightImage"
+      :sliderPositionPercentage="sliderPosition"
+      v-if="goDark"
     />
     <VueCompareImage
       class="hidden-lg-and-up"
@@ -96,6 +108,9 @@ import { VueTyper } from 'vue-typer'
 import VueCompareImage from 'vue-compare-image'
 
 export default {
+  props:{
+    goDark: Boolean
+  },
   metaInfo: {
     title: 'Thomas PUJOL',
     titleTemplate: 'Thomas PUJOL',
@@ -137,6 +152,8 @@ export default {
       text1: ['Administrateur système', 'Administrateur réseau', 'Développeur web', 'Développeur logiciel'],
       leftImage: '/resources/images/leftImage.png',
       rightImage: '/resources/images/rightImage.png',
+      blackLeftImage: '/resources/images/blackLeftImage.png',
+      blackRightImage: '/resources/images/blackRightImage.png',
       leftImage2: '/resources/images/IMG_0211.jpg',
       rightImage2: '/resources/images/IMG_0211.jpg',
       sliderLine: 0,
