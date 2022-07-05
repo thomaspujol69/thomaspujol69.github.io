@@ -62,7 +62,7 @@
 
 <script>
 export default {
-  props:{
+  props: {
     goDark: Boolean
   },
   name: 'SizeModalTest',

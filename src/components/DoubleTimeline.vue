@@ -3,9 +3,9 @@
     <toggle-button :value="isHidden"
       @change="unHide"
       :labels="{checked: title1, unchecked: title2}"
-      width=165
-      height=40
-      font-size=20
+      :width=165
+      :height=40
+      :font-size=20
       :color="{checked:'#37b0db', unchecked:'#afbccc'}"
       :switch-color="{ checked: '#187df0', unchecked: '#2196f3' }" >
     </toggle-button>

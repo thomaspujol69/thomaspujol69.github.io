@@ -108,7 +108,7 @@ import { VueTyper } from 'vue-typer'
 import VueCompareImage from 'vue-compare-image'
 
 export default {
-  props:{
+  props: {
     goDark: Boolean
   },
   metaInfo: {

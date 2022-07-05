@@ -7,7 +7,9 @@
       <formation-timeline :data="certifications" title="Certifications et MOOC"></formation-timeline>
     </v-flex>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2 timelineContainer flexCompetences">
-      <v-flex xl5 class="mx-2 pt-4">
+      <PieChart borderColor="#000" v-if="!goDark"/>
+      <PieChart borderColor="#999" v-if="goDark"/>
+      <!--v-flex xl5 class="mx-2 pt-4">
         <h2>
           <span>Compétences en </span>
           <span class="blue--text">développement</span>
@@ -36,7 +38,7 @@
         <v-progress-linear v-model="bufferJS" :buffer-value="bufferValue" color="blue" height="16"></v-progress-linear>
         <strong>Java</strong>
         <v-progress-linear v-model="bufferJava" :buffer-value="bufferValue" color="blue" height="16"></v-progress-linear>
-      </v-flex>
+      </v-flex-->
       <div class="mt-4 pt-2">
         <v-btn
           href="/resources/docs/PUJOL_Thomas_CV.pdf"
@@ -56,8 +58,12 @@
 <script>
 import FormationDoubleTimeline from '../components/DoubleTimeline.vue'
 import FormationTimeline from '../components/FormationTimeline.vue'
+import PieChart from '../components/PieChart.vue'
 export default {
-  components: { FormationTimeline, FormationDoubleTimeline },
+  props: {
+    goDark: Boolean
+  },
+  components: { FormationTimeline, FormationDoubleTimeline, PieChart },
   metaInfo: {
     title: 'Curriculum Vitae',
     titleTemplate: '%s ← Thomas PUJOL',
