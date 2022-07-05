@@ -1,50 +1,52 @@
 <template>
   <div>
-    <toggle-button :value="isHidden"
-      @change="unHide"
-      :labels="{checked: title1, unchecked: title2}"
-      :width=165
-      :height=40
-      :font-size=20
-      :color="{checked:'#37b0db', unchecked:'#afbccc'}"
-      :switch-color="{ checked: '#187df0', unchecked: '#2196f3' }" >
-    </toggle-button>
     <div class="slider">
-      <div :ref="title2" style="opacity:1;" class="timelineContainer">
-        <timeline timeline-bg="#2196f3" timeline-theme="#b3d4fc">
-          <br>
-          <timeline-item v-for="(e) in data2" :key="e.title" icon-size="medium" :hollow="true">
-            <div class="row">
-              <div class="col-3 blueDate" >
-                <strong v-html="e.date"></strong>
+      <div class="timelineContainer">
+      <toggle-button :value="isHidden"
+        @change="unHide"
+        :labels="{checked: title1, unchecked: title2}"
+        :width=165
+        :height=40
+        :font-size=20
+        :color="{checked:'#37b0db', unchecked: '#afbccc'}"
+        :switch-color="{ checked: '#187df0', unchecked: '#2196f3' }" >
+      </toggle-button>
+        <div :ref="title2" style="opacity:1;" class="timelineContainer">
+          <timeline timeline-bg="#2196f3" timeline-theme="#b3d4fc">
+            <br>
+            <timeline-item v-for="(e) in data2" :key="e.title" icon-size="medium" :hollow="true">
+              <div class="row">
+                <div class="col-3 blueDate" >
+                  <strong v-html="e.date"></strong>
+                </div>
+                <div class="col-9 content">
+                  <p>
+                      <strong v-html="e.title"></strong><br>
+                      <span v-html="e.subtitle"></span>
+                  </p>
+                </div>
               </div>
-              <div class="col-9 content">
-                <p>
-                    <strong v-html="e.title"></strong><br>
-                    <span v-html="e.subtitle"></span>
-                </p>
+            </timeline-item>
+          </timeline>
+        </div>
+        <div :ref="title1" style="opacity: 0;display:none;" class="timelineContainer">
+          <timeline timeline-bg="#2196f3" timeline-theme="#b3d4fc">
+            <br>
+            <timeline-item v-for="(e) in data1" :key="e.title" icon-size="medium" :hollow="true">
+              <div class="row">
+                <div class="col-3 blueDate" >
+                  <strong v-html="e.date"></strong>
+                </div>
+                <div class="col-9 content">
+                  <p>
+                      <strong v-html="e.title"></strong><br>
+                      <span v-html="e.subtitle"></span>
+                  </p>
+                </div>
               </div>
-            </div>
-          </timeline-item>
-        </timeline>
-      </div>
-      <div :ref="title1" style="opacity: 0;display:none;" class="timelineContainer">
-        <timeline timeline-bg="#2196f3" timeline-theme="#b3d4fc">
-          <br>
-          <timeline-item v-for="(e) in data1" :key="e.title" icon-size="medium" :hollow="true">
-            <div class="row">
-              <div class="col-3 blueDate" >
-                <strong v-html="e.date"></strong>
-              </div>
-              <div class="col-9 content">
-                <p>
-                    <strong v-html="e.title"></strong><br>
-                    <span v-html="e.subtitle"></span>
-                </p>
-              </div>
-            </div>
-          </timeline-item>
-        </timeline>
+            </timeline-item>
+          </timeline>
+        </div>
       </div>
     </div>
   </div>
@@ -94,7 +96,7 @@ export default {
       }
     }
   },
-  props: ['data1', 'title1', 'data2', 'title2']
+  props: ['data1', 'title1', 'data2', 'title2', 'goDark']
 }
 </script>
 
@@ -123,6 +125,9 @@ li.timeline-item{
 .vue-js-switch:hover .v-switch-button{
   animation: mymove 1s infinite;
   background-color: #3499ec !important;
+}
+.vue-js-switch .v-switch-label{
+  color:#000 !important;
 }
 @media only screen and (max-width: 449px) {
   .timelineContainer .content{

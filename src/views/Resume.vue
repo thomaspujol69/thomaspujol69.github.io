@@ -1,7 +1,7 @@
 <template>
   <v-layout row justify-center wrap class="mt-4 pt-2">
     <v-flex xs12 sm12 lg6 xl6 class="mt-4 pt-2">
-      <formation-double-timeline :data2="formation" title2="Formation" :data1="experiences" title1="Expériences"></formation-double-timeline>
+      <formation-double-timeline :goDark="goDark" :data2="formation" title2="Formation" :data1="experiences" title1="Expériences"></formation-double-timeline>
     </v-flex>
     <v-flex xs12 sm12 lg6 xl6 class="mt-4 pt-2">
       <formation-timeline :data="certifications" title="Certifications et MOOC"></formation-timeline>
@@ -206,7 +206,7 @@ export default {
 <style>
 .timelineContainer{
   max-width:600px;
-  margin:auto;
+  margin:auto !important;
 }
 .flexCompetences{
   flex-direction: row;
