@@ -8,7 +8,7 @@
         :width=165
         :height=40
         :font-size=20
-        :color="{checked:'#37b0db', unchecked: '#afbccc'}"
+        :color="{checked:'#37b0db', unchecked: '#CDD4DE'}"
         :switch-color="{ checked: '#187df0', unchecked: '#2196f3' }" >
       </toggle-button>
         <div :ref="title2" style="opacity:1;" class="timelineContainer">

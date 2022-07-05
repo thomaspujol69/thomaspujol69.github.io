@@ -106,9 +106,9 @@ export default {
       interval: 0,
       certifications: [
         {
-          date: 'FEV 2022',
-          title: 'Cisco - Cybersecurity Essentials',
-          subtitle: 'Connaissance fondamentale de la cybersécurité'
+          date: 'JUIL 2022<br>FEV 2022',
+          title: 'Cisco - Cybersecurity Pathway',
+          subtitle: '<a target="_blank" href="https://www.credly.com/badges/850e2bb8-4980-48b8-b279-53004cd5e3a4">Connaissances en cybersécurité</a>'
         },
         {
           date: 'JAN 2022',
