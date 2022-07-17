@@ -18,43 +18,43 @@ export default {
     plot: [
       {
         value: 16.98,
-        color: '#AEF3E7',
+        color: '#1f01f5',
         label: 'Python',
         id: 1
       },
       {
         value: 16.04,
-        color: '#8EE3EF',
+        color: '#2d0cf6',
         label: 'SQL & NoSQL',
         id: 2
       },
       {
         value: 16.04,
-        color: '#2196f3',
+        color: '#3210f6',
         label: 'PHP',
         id: 3
       },
       {
         value: 16.04,
-        color: '#37718E',
+        color: '#4922f8',
         label: 'HTML/CSS',
         id: 4
       },
       {
         value: 14.15,
-        color: '#254E70',
+        color: '#592ff9',
         label: 'C/C++',
         id: 5
       },
       {
         value: 11.32,
-        color: '#8A425E',
+        color: '#6538fa',
         label: 'JavaScript',
         id: 6
       },
       {
         value: 9.43,
-        color: '#C33C54',
+        color: '#6e3ffa',
         label: 'Java',
         id: 7
       }
