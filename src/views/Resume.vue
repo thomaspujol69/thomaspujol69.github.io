@@ -166,7 +166,7 @@ export default {
           subtitle: 'Université Claude Bernard Lyon 1'
         },
         {
-          date: 'AUJOURD\'HUI<br>MAI 2021',
+          date: 'AVR 2022<br>MAI 2021',
           title: 'Service Technique',
           subtitle: 'BDE Info Lyon 1'
         },
