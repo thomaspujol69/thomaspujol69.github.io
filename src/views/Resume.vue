@@ -8,7 +8,7 @@
     </v-flex>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2 timelineContainer flexCompetences">
       <PieChart borderColor="#000" v-if="!goDark"/>
-      <PieChart borderColor="#999" v-if="goDark"/>
+      <PieChart borderColor="#fff" v-if="goDark"/>
       <!--v-flex xl5 class="mx-2 pt-4">
         <h2>
           <span>Compétences en </span>

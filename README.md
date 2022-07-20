@@ -1,6 +1,4 @@
-# eldin.space
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9042b890-6768-4734-8fa2-cb0b81be7a72/deploy-status)](https://app.netlify.com/sites/eldin-space/deploys)
+# pujol.eu.org
 
 ## Project setup
 
@@ -32,6 +30,5 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Configuration supplémentaire
+Dans `node_modules\@tygr\vue-pie-chart\dist\vue-pie-chart.js` et `node_modules\@tygr\vue-pie-chart\dist\vue-pie-chart.min.js` modifier les valeurs stroke-width à 1.5.  
