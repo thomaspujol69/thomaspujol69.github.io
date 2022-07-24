@@ -7,6 +7,10 @@
       <formation-timeline :data="certifications" title="Certifications et MOOC"></formation-timeline>
     </v-flex>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2 timelineContainer flexCompetences">
+      <h1 style="margin-top: 50px; margin-bottom: 20px;">
+        <span>Compétences en </span>
+        <span class="blue--text">développement</span>
+      </h1>
       <PieChart borderColor="#000" v-if="!goDark"/>
       <PieChart borderColor="#fff" v-if="goDark"/>
       <!--v-flex xl5 class="mx-2 pt-4">
@@ -39,7 +43,7 @@
         <strong>Java</strong>
         <v-progress-linear v-model="bufferJava" :buffer-value="bufferValue" color="blue" height="16"></v-progress-linear>
       </v-flex-->
-      <div class="mt-4 pt-2">
+      <div class="pt-2" style="margin-top: 50px;">
         <v-btn
           href="/resources/docs/PUJOL_Thomas_CV.pdf"
           target="_blank"

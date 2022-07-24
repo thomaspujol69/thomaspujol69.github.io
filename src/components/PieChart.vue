@@ -1,5 +1,6 @@
 <template>
   <pie-chart
+    :id="pieChartName"
     :plot="plot"
     background-color="#1fe0"
     :color="borderColor">
@@ -15,6 +16,7 @@ export default {
   },
   props: ['borderColor'],
   data: () => ({
+    pieChartName: 'Pie' + Math.floor(Math.random() * 99999999),
     plot: [
       {
         value: 16.98,
@@ -59,12 +61,24 @@ export default {
         id: 7
       }
     ]
-  })
+  }),
+  mounted: function () {
+    var pSvg = this.$el.querySelector('#' + this.pieChartName + ' > svg')
+    const {
+      x,
+      y,
+      width,
+      height
+    } = pSvg.getBBox()
+    const viewBoxValue = [x, y, width, height].join(' ')
+    pSvg.setAttribute('viewBox', viewBoxValue)
+  }
 }
 </script>
 
 <style>
 .pie-chart{
   width: 100% !important;
+  max-width : 800px;
 }
 </style>

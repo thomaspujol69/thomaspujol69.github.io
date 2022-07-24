@@ -2,21 +2,22 @@
   <div class="timelineContainer">
     <h2>{{title}}</h2>
     <timeline timeline-bg="#2196f3" timeline-theme="#b3d4fc">
-        <br>
-        <timeline-item v-for="(e) in data" :key="e.title" icon-size="medium" :hollow="true">
-            <div class="row">
-                <div class="col-3 blueDate" >
-                    <strong v-html="e.date"></strong>
-                </div>
-                <div class="col-9 content">
-                    <p>
-                        <strong v-html="e.title"></strong><br>
-                        <span v-html="e.subtitle"></span>
-                    </p>
-                </div>
+      <br>
+      <timeline-item v-for="(ei) in Object.keys(data)" :key="ei" v-show="(parseInt(ei)<2 || showWholeList)" icon-size="medium" :hollow="true">
+        <div class="row">
+            <div class="col-3 blueDate" >
+                <strong v-html="data[ei].date"></strong>
             </div>
-        </timeline-item>
+            <div class="col-9 content">
+                <p>
+                    <strong v-html="data[ei].title"></strong><br>
+                    <span v-html="data[ei].subtitle"></span>
+                </p>
+            </div>
+        </div>
+      </timeline-item>
     </timeline>
+    <button @click="showWholeList = !showWholeList" v-html="(showWholeList) ? 'Cacher':'Afficher plus'"></button>
   </div>
 </template>
 
@@ -24,12 +25,16 @@
 import { Timeline, TimelineItem } from 'vue-cute-timeline'
 import 'vue-cute-timeline/dist/index.css'
 import 'bootstrap/dist/css/bootstrap-grid.css'
+
 export default {
   components: {
     Timeline,
     TimelineItem
   },
-  props: ['data', 'title']
+  props: ['data', 'title'],
+  data: () => ({
+    showWholeList: false
+  })
 }
 </script>
 
