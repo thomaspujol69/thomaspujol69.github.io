@@ -271,11 +271,15 @@ button.showMore{
   background-color: #82ccff;
   background-image: linear-gradient(0.375turn, rgba(71,196,196,255), rgba(35,98,98,0));
   transition: background-color 0.3s;
+  font-weight: 500;
 }
 button.showMore:hover{
   background-color: #32ccff;
 }
 button.showMore:active{
   background-color: #128dff;
+}
+a{
+  color: #2196f3;
 }
 </style>

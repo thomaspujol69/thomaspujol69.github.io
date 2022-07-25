@@ -60,8 +60,8 @@
             </h3>
             <div>
               <p class="justify">
-                Je suis étudiant, passionné d'informatique.
-                Dynamique et doué d'un bon relationnel, je dispense des tutorats à l'Université Lyon 1.
+                Je suis étudiant à l'Institut National des Sciences Appliquées de Lyon, passionné d'informatique.
+                Dynamique et doué d'un bon relationnel, je suis auto-entrepreneur et donne des cours en ligne.
                 Lorsque je ne suis pas à l'université, je pratique mon sport, le karaté, fais de la musique ou réalise un nouveau projet !
               </p>
             </div>
@@ -174,7 +174,9 @@ export default {
     transform: rotateZ(10deg);
   }
 }
-
+.justify{
+  text-align: justify;
+}
 .vue-typer {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
