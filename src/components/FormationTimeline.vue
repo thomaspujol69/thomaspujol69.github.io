@@ -58,5 +58,4 @@ li.timeline-item{
   }
 }
 
-
 </style>
