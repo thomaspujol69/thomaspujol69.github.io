@@ -14,15 +14,15 @@
         <div :ref="title2" style="opacity:1;" class="timelineContainer">
           <timeline timeline-bg="#2196f3" timeline-theme="#b3d4fc">
             <br>
-            <timeline-item v-for="(e) in data2" :key="e.title" icon-size="medium" :hollow="true">
+            <timeline-item v-for="(ei) in Object.keys(data2)" :key="data2[ei].title" :style="(parseInt(ei)<4 || showWholeList) ? 'max-height : 1000px;height: auto;' : 'border:none; margin: 0 0 0 28px; padding: 0; max-height : 0;overflow: hidden;display: block;'" icon-size="medium" :hollow="true" class="dropdown">
               <div class="row">
                 <div class="col-3 blueDate" >
-                  <strong v-html="e.date"></strong>
+                  <strong v-html="data2[ei].date"></strong>
                 </div>
                 <div class="col-9 content">
                   <p>
-                      <strong v-html="e.title"></strong><br>
-                      <span v-html="e.subtitle"></span>
+                      <strong v-html="data2[ei].title"></strong><br>
+                      <span v-html="data2[ei].subtitle"></span>
                   </p>
                 </div>
               </div>
@@ -32,21 +32,22 @@
         <div :ref="title1" style="opacity: 0;display:none;" class="timelineContainer">
           <timeline timeline-bg="#2196f3" timeline-theme="#b3d4fc">
             <br>
-            <timeline-item v-for="(e) in data1" :key="e.title" icon-size="medium" :hollow="true">
+            <timeline-item v-for="(ei) in Object.keys(data1)" :key="data1[ei].title" :style="(parseInt(ei)<4 || showWholeList) ? 'max-height : 1000px;height: auto;' : 'border:none; margin: 0 0 0 28px; padding: 0; max-height : 0;overflow: hidden;display: block;'" icon-size="medium" :hollow="true" class="dropdown">
               <div class="row">
                 <div class="col-3 blueDate" >
-                  <strong v-html="e.date"></strong>
+                  <strong v-html="data1[ei].date"></strong>
                 </div>
                 <div class="col-9 content">
                   <p>
-                      <strong v-html="e.title"></strong><br>
-                      <span v-html="e.subtitle"></span>
+                      <strong v-html="data1[ei].title"></strong><br>
+                      <span v-html="data1[ei].subtitle"></span>
                   </p>
                 </div>
               </div>
             </timeline-item>
           </timeline>
         </div>
+        <button class="showMore" @click="showWholeList = !showWholeList" v-html="(showWholeList) ? 'Afficher moins':'Afficher plus'"></button>
       </div>
     </div>
   </div>
@@ -66,6 +67,7 @@ export default {
   },
   data () {
     return {
+      showWholeList: false,
       isHidden: false,
       unHide: (title1, title2) => {
         this.isHidden = !this.isHidden

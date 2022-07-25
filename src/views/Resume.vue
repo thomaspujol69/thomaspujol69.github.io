@@ -7,10 +7,11 @@
       <formation-timeline :data="certifications" title="Certifications et MOOC"></formation-timeline>
     </v-flex>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2 timelineContainer flexCompetences">
-      <h1 style="margin-top: 50px; margin-bottom: 20px;">
-        <span>Compétences en </span>
-        <span class="blue--text">développement</span>
-      </h1>
+      <h2 style="margin-top: 50px; margin-bottom: 20px;">
+        <span>Mes </span>
+        <span class="blue--text">langages</span>
+        <span> favoris</span>
+      </h2>
       <PieChart borderColor="#000" v-if="!goDark"/>
       <PieChart borderColor="#fff" v-if="goDark"/>
       <!--v-flex xl5 class="mx-2 pt-4">
@@ -122,7 +123,22 @@ export default {
         {
           date: 'DEC 2020',
           title: 'Sécurité des Réseaux Informatiques',
-          subtitle: 'Institut Mines Télécom - France Université Numérique'
+          subtitle: '<a target="_blank" href="https://lms.fun-mooc.fr/media/attestations/attestation_suivi_course-v1:MinesTelecom+04037+session01_c7d5ab3477de1494ed669bfade56be55.pdf">Institut Mines Télécom - <span title="France Université Numérique">FUN<span></a>'
+        },
+        {
+          date: 'AVR 2020',
+          title: 'Python : des fondamentaux aux concepts avancés du langage',
+          subtitle: '<a target="_blank" href="https://lms.fun-mooc.fr/media/attestations/attestation_suivi_course-v1:UCA+107001+session02_ef52fbc87249017dea039994aada0a0d.pdf">Université Côte d\'Azur - <span title="France Université Numérique">FUN<span></a>'
+        },
+        {
+          date: 'MAI 2022',
+          title: 'S\'initier à l\'enseignement en Sciences Numériques et Technologie',
+          subtitle: '<a target="_blank" href="https://lms.fun-mooc.fr/media/attestations/attestation_suivi_course-v1:inria+41018+session01_b53306b0e061fb4ecbdb6a46df7197b4.pdf">Inria - France Université Numérique</a>'
+        },
+        {
+          date: 'DEC 2021',
+          title: 'Je suis tuteur dans l\'enseignement supérieur',
+          subtitle: '<a target="_blank" href="https://lms.fun-mooc.fr/media/attestations/attestation_suivi_course-v1:enseignementsup+131002+session01_164c142dfd144b9b14bbde3959ba3d26.pdf">Ministère de l\'Enseignement Supérieur - <span title="France Université Numérique">FUN<span></a>'
         },
         {
           date: 'AUJOURD\'HUI<br>SEP 2021',
@@ -132,14 +148,19 @@ export default {
       ],
       formation: [
         {
-          date: 'JUIL 2022<br>AVR 2022',
-          title: 'Stagiaire - Systèmes et Réseaux',
-          subtitle: 'Commune de Neuville-Sur-Saône'
+          date: 'JUIL 2025<br>SEP 2022',
+          title: 'Cursus Ingénieur',
+          subtitle: 'Institut National des Sciences Appliquées de Lyon'
         },
         {
           date: 'JUIL 2022<br>SEP 2020',
           title: 'DUT Informatique',
           subtitle: 'Université Claude Bernard Lyon 1'
+        },
+        {
+          date: 'JUIL 2022<br>AVR 2022',
+          title: 'Stagiaire - Systèmes et Réseaux',
+          subtitle: 'Commune de Neuville-Sur-Saône'
         },
         {
           date: 'JUIL 2021<br>JUIN 2021',
@@ -170,14 +191,19 @@ export default {
           subtitle: 'Université Claude Bernard Lyon 1'
         },
         {
-          date: 'AVR 2022<br>MAI 2021',
-          title: 'Service Technique',
-          subtitle: 'BDE Info Lyon 1'
-        },
-        {
           date: 'AUJOURD\'HUI<br>AOÛT 2020',
           title: 'Concepteur et mainteneur d\'applications web',
           subtitle: 'Wado Club de Lyon'
+        },
+        {
+          date: 'AUJOURD\'HUI<br>DEC 2017',
+          title: 'Développeur & déployeur d\'applications',
+          subtitle: 'SKI CLUB La Verpillière & Saint Quentin Fallavier, Bistrot du Père, ASC Caluire, CIL Caluire Sud - Clos Savaron'
+        },
+        {
+          date: 'AVR 2022<br>MAI 2021',
+          title: 'Service Technique',
+          subtitle: 'BDE Info Lyon 1'
         }
       ]
     }
@@ -227,5 +253,29 @@ export default {
   .flexCompetences{
     max-width:unset;
   }
+}
+
+.timeline-item{
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+button.showMore{
+  min-width : 140px;
+  border: 1px solid black;
+  border-radius: 1em;
+  padding: 0.7em 1em;
+  background-color: #82ccff;
+  background-image: linear-gradient(0.375turn, rgba(71,196,196,255), rgba(35,98,98,0));
+  transition: background-color 0.3s;
+}
+button.showMore:hover{
+  background-color: #32ccff;
+}
+button.showMore:active{
+  background-color: #128dff;
 }
 </style>
