@@ -121,7 +121,7 @@ export default {
       { property: 'og:title', content: 'Thomas PUJOL' },
       { property: 'og:site_name', content: 'Thomas PUJOL' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://pujol.fr.eu.org' },
+      { property: 'og:url', content: 'https://pujol.eu.org' },
       {
         property: 'og:image',
         content: '/IMG_0211.jpg'
