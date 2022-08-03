@@ -60,7 +60,7 @@
             </h3>
             <div>
               <p class="justify">
-                Je suis étudiant à l'Institut National des Sciences Appliquées de Lyon, passionné d'informatique.
+                Je suis étudiant à Télécom Paris, passionné d'informatique.
                 Dynamique et doué d'un bon relationnel, je suis auto-entrepreneur et donne des cours en ligne.
                 Lorsque je ne suis pas à l'université, je pratique mon sport, le karaté, fais de la musique ou réalise un nouveau projet !
               </p>

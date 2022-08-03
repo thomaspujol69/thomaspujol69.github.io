@@ -149,8 +149,8 @@ export default {
       formation: [
         {
           date: 'JUIL 2025<br>SEP 2022',
-          title: 'Cursus Ingénieur',
-          subtitle: 'Institut National des Sciences Appliquées de Lyon'
+          title: 'Cursus Ingénieur Cybersécurité',
+          subtitle: 'Télécom Paris'
         },
         {
           date: 'JUIL 2022<br>SEP 2020',
@@ -265,13 +265,14 @@ export default {
 
 button.showMore{
   min-width : 140px;
-  border: 1px solid black;
+  border: none;
   border-radius: 1em;
   padding: 0.7em 1em;
-  background-color: #82ccff;
-  background-image: linear-gradient(0.375turn, rgba(71,196,196,255), rgba(35,98,98,0));
+  background-color: #2196f3;
+  background-image: linear-gradient(0.375turn, rgb(64,204,236,255), rgba(35,98,98,0));
   transition: background-color 0.3s;
   font-weight: 500;
+  color:white;
 }
 button.showMore:hover{
   background-color: #32ccff;
