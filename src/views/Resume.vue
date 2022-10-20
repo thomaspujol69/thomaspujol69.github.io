@@ -8,9 +8,9 @@
     </v-flex>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2 timelineContainer flexCompetences">
       <h2 style="margin-top: 50px; margin-bottom: 20px;">
-        <span>Mes </span>
+        <span>Les </span>
         <span class="blue--text">langages</span>
-        <span> favoris</span>
+        <span> que j'utilise le plus</span>
       </h2>
       <PieChart borderColor="#000" v-if="!goDark"/>
       <PieChart borderColor="#fff" v-if="goDark"/>
@@ -83,7 +83,7 @@ export default {
       { property: 'og:title', content: 'Thomas PUJOL' },
       { property: 'og:site_name', content: 'Thomas PUJOL' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://pujol.fr.eu.org' },
+      { property: 'og:url', content: 'https://pujol.eu.org' },
       {
         property: 'og:image',
         content: '/resources/images/IMG_0211.jpg'
@@ -149,8 +149,8 @@ export default {
       formation: [
         {
           date: 'JUIL 2025<br>SEP 2022',
-          title: 'Cursus Ingénieur',
-          subtitle: 'Institut National des Sciences Appliquées de Lyon'
+          title: 'Cursus Ingénieur Cybersécurité',
+          subtitle: 'Télécom Paris'
         },
         {
           date: 'JUIL 2022<br>SEP 2020',
@@ -184,6 +184,11 @@ export default {
           date: 'AUJOURD\'HUI<br>JAN 2022',
           title: 'Auto-Entrepreneur',
           subtitle: 'Programmation, conseil et autres activités informatiques'
+        },
+        {
+          date: 'AUJOURD\'HUI<br>JUIL 2022',
+          title: 'Professeur d\'informatique',
+          subtitle: 'Aide à l\'apprentissage pour des étudiants et lycéens'
         },
         {
           date: 'JUIL 2022<br>OCT 2021',
@@ -265,13 +270,14 @@ export default {
 
 button.showMore{
   min-width : 140px;
-  border: 1px solid black;
+  border: none;
   border-radius: 1em;
   padding: 0.7em 1em;
-  background-color: #82ccff;
-  background-image: linear-gradient(0.375turn, rgba(71,196,196,255), rgba(35,98,98,0));
+  background-color: #2196f3;
+  background-image: linear-gradient(0.375turn, rgb(64,204,236,255), rgba(35,98,98,0));
   transition: background-color 0.3s;
   font-weight: 500;
+  color:white;
 }
 button.showMore:hover{
   background-color: #32ccff;
