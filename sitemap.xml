@@ -6,21 +6,19 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://pujol.fr.eu.org/</loc>
-  <lastmod>2021-04-07T00:20:23+00:00</lastmod>
+  <loc>https://pujol.eu.org/</loc>
+  <lastmod>2022-10-20T00:20:23+00:00</lastmod>
 </url>
 <url>
-  <loc>https://pujol.fr.eu.org/resume</loc>
-  <lastmod>2021-12-23T00:18:53+00:00</lastmod>
+  <loc>https://pujol.eu.org/resume</loc>
+  <lastmod>2022-10-20T00:18:53+00:00</lastmod>
 </url>
 <url>
-  <loc>https://pujol.fr.eu.org/portfolio</loc>
-  <lastmod>2021-12-23T00:18:53+00:00</lastmod>
+  <loc>https://pujol.eu.org/portfolio</loc>
+  <lastmod>2022-07-31T00:18:53+00:00</lastmod>
 </url>
 <url>
-  <loc>https://pujol.fr.eu.org/contact</loc>
-  <lastmod>2021-12-23T00:18:53+00:00</lastmod>
+  <loc>https://pujol.eu.org/contact</loc>
+  <lastmod>2022-07-31T00:18:53+00:00</lastmod>
 </url>
-
-
 </urlset>
