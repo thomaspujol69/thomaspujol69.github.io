@@ -78,6 +78,19 @@ export default {
       projects: [
         {
           dialog: false,
+          title: 'Rezel',
+          buttons: [
+            {
+              link: 'https://rezel.net/',
+              icon: 'fas fa-desktop',
+              name: 'Site web'
+            }
+          ],
+          tech: ['Administration systèmes et réseaux', 'Proxmox', 'Python', 'Cisco', 'HPE'],
+          poster: '/resources/images/admin/rezel.png'
+        },
+        {
+          dialog: false,
           title: 'Eovolt',
           buttons: [
             {
@@ -118,7 +131,7 @@ export default {
               name: 'Site web'
             }
           ],
-          tech: ['Administration système', 'Gitlab Runner', 'CI/CD', 'Nginx', 'NodeJS', 'MySQL', 'DevOps'],
+          tech: ['Administration système', 'Gitlab Runner', 'CI/CD', 'Nginx', 'NodeJS', 'MySQL', 'DevOps', 'Migration de base de données'],
           poster: '/resources/images/admin/eatic.png'
         },
         {

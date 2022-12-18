@@ -181,6 +181,11 @@ export default {
       ],
       experiences: [
         {
+          date: 'AUJOURD\'HUI<br>OCT 2022',
+          title: 'Rezel',
+          subtitle: 'Membre du conseil d\'administration'
+        },
+        {
           date: 'AUJOURD\'HUI<br>JAN 2022',
           title: 'Auto-Entrepreneur',
           subtitle: 'Programmation, conseil et autres activités informatiques'

@@ -138,7 +138,7 @@ export default {
               name: 'Github'
             },
             {
-              link: 'https://noelcanadien.bdeinfo.org/',
+              link: 'http://noelcanadien.shdm.cf/',
               icon: 'fas fa-desktop',
               name: 'Demo'
             }
