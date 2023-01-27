@@ -196,6 +196,16 @@ export default {
           subtitle: 'Aide à l\'apprentissage pour des étudiants et lycéens'
         },
         {
+          date: 'AUJOURD\'HUI<br>DEC 2022',
+          title: 'Pôle web',
+          subtitle: 'Forum de Télécom Paris'
+        },
+        {
+          date: 'AUJOURD\'HUI<br>NOV 2022',
+          title: 'Service informatique',
+          subtitle: 'Gala de Télécom Paris'
+        },
+        {
           date: 'JUIL 2022<br>OCT 2021',
           title: 'Etudiant tuteur',
           subtitle: 'Université Claude Bernard Lyon 1'
